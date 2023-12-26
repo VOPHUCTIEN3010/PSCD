@@ -1,0 +1,94 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #50514F;
+}
+
+.example-slider{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.bxslider{
+    position: relative;
+    width: 600px;
+    height: 450px;
+  
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.bx-caption span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-family: Arial;
+    display: block;
+    font-size: .85em;
+    padding: 10px;
+    width: 100%;
+    background-color: #50514F;
+    opacity: 0.7;
+}
+    
+
+.bx-controls-direction a{
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+.bx-next:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.bx-prev:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.bx-prev {
+    left: 10px;
+    background: url(controls\ \(1\).png) no-repeat 0 -32px;
+    z-index: 100;
+}
+.bx-next {
+    right: 10px;
+    background: url(controls\ \(1\).png) no-repeat -43px -32px;
+    z-index: 100;
+
+}
+.bx-pager{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    
+}
+.bx-pager-item button{
+    background: #0c0c0c;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    border-radius: 5px;
+}
+.bx-pager-item:hover{
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+.active{
+    background-color: #fff;
+   
+}
